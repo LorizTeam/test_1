@@ -7,7 +7,11 @@
 <%@ page import ="java.sql.*" %>
 <html> 
 	<head>
+<<<<<<< HEAD
+		<title>hihihi</title>
+=======
 		<title>kkokokoko</title>
+>>>>>>> origin/master
 	</head>
 	<body>
 		<html:form action="index1">
