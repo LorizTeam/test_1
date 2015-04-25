@@ -9,6 +9,8 @@
 	<head>
 		<title>kkokokoko3</title>
 	</head>
+	
+	//5555
 	<body>
 		<html:form action="index1">
 			<%	if(request.getAttribute("lrtd") != null){
