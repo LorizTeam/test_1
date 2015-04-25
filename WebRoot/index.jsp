@@ -7,13 +7,8 @@
 <%@ page import ="java.sql.*" %>
 <html> 
 	<head>
-//22
 		<title>kkokokoko3</title>
-//33
 	</head>
-	
-	//5555
-//6666666666666666
 	<body>
 		<html:form action="index1">
 			<%	if(request.getAttribute("lrtd") != null){
