@@ -7,13 +7,9 @@
 <%@ page import ="java.sql.*" %>
 <html> 
 	<head>
-<<<<<<< HEAD
 //22
-		<title>kkokokoko2</title>
-//33
-=======
 		<title>kkokokoko3</title>
->>>>>>> origin/master
+//33
 	</head>
 	<body>
 		<html:form action="index1">
