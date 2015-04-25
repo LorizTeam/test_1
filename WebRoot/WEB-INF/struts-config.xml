@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="indexForm" type="com.smict.struts.form.IndexForm" />
+    <form-bean name="mainForm" type="com.smict.struts.form.MainForm" />
+    <form-bean name="afterloginForm" type="com.smict.struts.form.AfterloginForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+  <action path="/indexStart"				scope="request"
+            name= "indexForm"      				validate="false"	
+          	type="com.smict.struts.action.IndexActionStart">
+      	<forward name="success"  path="/index.jsp" />
+    </action> 
+    
+<action path="/index1"					scope="request"
+            name= "indexForm"       			parameter="reqCode"
+          	type="com.smict.struts.action.IndexAction"
+      		validate="false"    input="/index.jsp">
+      	
+      
+      <forward name="false" path="/index.jsp" />
+      <forward name="success" path="/main.do" />
+      <forward name="afterlogin" path="/afterlogin.do" />
+      
+      
+      
+    </action>
+    <action
+      attribute="mainForm"
+      input="/form/main.jsp"
+      name="mainForm"
+      path="/main"
+      scope="request"
+      type="com.smict.struts.action.MainAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/form/main.jsp" />
+    </action>
+    <action
+      attribute="afterloginForm"
+      input="/form/afterlogin.jsp"
+      name="afterloginForm"
+      path="/afterlogin"
+      scope="request"
+      type="com.smict.struts.action.AfterloginAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/form/afterlogin.jsp" />
+    </action>    
+  </action-mappings>
+
+  <message-resources parameter="com.smict.struts.ApplicationResources" />
+</struts-config>
+
