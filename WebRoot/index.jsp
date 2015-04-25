@@ -7,7 +7,7 @@
 <%@ page import ="java.sql.*" %>
 <html> 
 	<head>
-		<title>This is my Index</title>
+		<title>haaaaaaaaaaaaaa</title>
 	</head>
 	<body>
 		<html:form action="index1">
